@@ -18,7 +18,6 @@ int main(){
         printf("%c   ", c+65);
     }
 
-
     for(int y = 0; y < iBoardSize; y ++){
         printf("\n  ");
         for(int c = 0; c < iBoardSize; c++){
