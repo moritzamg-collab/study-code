@@ -23,7 +23,14 @@ int main(){
             fResult = fOperand1*fOperand2;
             break;
             case '/':
-            fResult = fOperand1/fOperand2;
+            if (fOperand2==0){
+                printf("\nInvalid, Division by 0!!!\n");
+                cOperator = ' ';
+                break;
+            }
+            else{
+                fResult = fOperand1/fOperand2;    
+            }
             break;
             case '%':
             fResult = (int)fOperand1%(int)fOperand2;
