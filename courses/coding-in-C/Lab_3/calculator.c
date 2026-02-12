@@ -63,17 +63,17 @@ int main() {
     char cOperator = ' ';
 
     printf("\nWert 1: ");
-    if(scanf("%f\n", &fWertA) != 1) {
+    if(scanf(" %f\n", &fWertA) != 1) {
         printf("\nUngueltiger Wert!!!");
     }
 
     printf("\nWert 2: ");
-    if(scanf("%f\n", &fWertB) != 1) {
+    if(scanf(" %f\n", &fWertB) != 1) {
         printf("\nUngueltiger Wert!!!");
     }
 
     printf("\nOperation: ");
-    if(scanf("%c\n", &cOperator) != 1) {
+    if(scanf(" %c\n", &cOperator) != 1) {
         printf("\nUngueltiger Operator!!!");
     }
     else if(cOperator != '+' && cOperator != '-' && cOperator != '*' && cOperator != '/') {
