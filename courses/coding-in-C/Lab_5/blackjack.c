@@ -7,10 +7,11 @@ int main()
     -------------------Blackjack-----------------------
     ToDo: 
     -ace usable as 11 & 1
-    -seed for random numbers
-
+    x-seed for random numbers
 
     */
+
+    srand(time(NULL));
 
     int i_deck_card_array[2][13] = { // int array with list of card values, amount of them left avaiable
         {11, 10, 10, 10, 10, 9, 8, 7, 6, 5, 4, 3, 2}, 
