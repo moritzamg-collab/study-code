@@ -68,7 +68,7 @@ int main(int argc, char **argv) {
 
 //Section III:
 
-/*
+
 int main(void) {
     srand(time(NULL));
 
@@ -82,16 +82,19 @@ int main(void) {
     particles[4] = 1;
     particles[6] = 1;
 
-    printf("\n----------\n");
+    int cycles = 0;
 
-    for(int i=0; i<10; i++) { 
+    printf("\n-------------------\nCycle: %d ", cycles);
+
+    for(int i=0; i<10; i++) {  // printing for time 0
         printf("%d", *(ptr+i));
     }
 
-    printf("\n----------\n");
+    printf("\n-------------------\n");
 
     while (amount_particles > 1)
     {
+        cycles++;
         for (int i = 1; i < 9; i++) // runs through array except borders
         {
             if((*(ptr+i))==1) {
@@ -121,6 +124,8 @@ int main(void) {
             }
         }
         
+        printf("Cycle: %d ", cycles);
+
         for (int i = 0; i < 10; i++) { // copy temp into particles; clear temp; print particles
             *(ptr + i) = *(temp_ptr + i);
             *(temp_ptr + i) = 0;
@@ -128,7 +133,7 @@ int main(void) {
             printf("%d", *(ptr+i));
         }
 
-        printf("\n----------\n");
+        printf("\n-------------------\n");
 
         amount_particles =  0;
         for(int i = 0; i < 10; i++) { // calculates amount of particles left
@@ -138,6 +143,7 @@ int main(void) {
         }
     }
 
+    printf("Finished with one particle left after %d cycles...\n", cycles);
+
     return 0;
 }
-*/
