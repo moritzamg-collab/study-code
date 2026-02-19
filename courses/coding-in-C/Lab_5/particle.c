@@ -49,7 +49,7 @@ Section II:
 
 */
 
-
+/*
 int main(int argc, char **argv) {
     
     printf("\n\n");
@@ -65,13 +65,13 @@ int main(int argc, char **argv) {
 
     return 0;
 }
-
+*/
 
 /*-------------------------------------------------------------------------------*/
 
 //Section III:
 
-/*
+
 int main(void) {
     srand(time(NULL));
 
@@ -121,9 +121,10 @@ int main(void) {
             (*(temp_ptr+8))++;
         }
 
-        for(int i=0; i<10; i++) { // delete conflicting particles
+        for(int i=0; i<10; i++) { // delete conflicting particles; print collision message
             if((*(temp_ptr+i)) == 2) {
                 *(temp_ptr+i) = 0;
+                printf("Collided in Field %d\n", i);
             }
         }
         
@@ -150,4 +151,3 @@ int main(void) {
 
     return 0;
 }
-*/
