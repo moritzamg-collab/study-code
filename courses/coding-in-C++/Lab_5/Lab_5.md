@@ -261,9 +261,16 @@ Your analyzer must be able to determine:
 - the largest value
 - the average value
 
+Then implement one additional generic function that prints all these metrics for a given dataset in a readable format.
+
 #### Requirements
 
 - Use STL algorithms wherever appropriate
+- The report function shall print:
+  - the raw data
+  - the sum
+  - the maximum
+  - the average
 - Test your functions with at least:
   - one `std::vector<int>`
   - one `std::vector<double>`
@@ -279,13 +286,8 @@ Reuse your work from the previous sections to process such frames.
 #### Requirements
 
 - Create at least two fixed-size arrays that represent sensor frames
-- Print the frames using your existing generic array logic
-- Transfer the frame data into `std::vector`s
+- Transfer the frame data into `std::vector`
 - Analyze the resulting vectors with your functions from Part A
-
-#### Context
-
-This simulates how embedded drone firmware hands over fixed-size measurement blocks to a more flexible analysis tool.
 
 ---
 
